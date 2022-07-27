@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+section[aria-label="navbar"] {
+  width: 100%;
+  height: 6rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.line {
+  width: 0.2rem;
+  padding: 0rem 0.1rem;
+  height: 3rem;
+  background-color: white;
+}
+
+.grow-list {
+  margin-right: auto;
+}
+
+.list {
+  display: flex;
+}
+
+.list-item {
+  list-style: none;
+  margin: 0rem 2rem;
+  color: white;
+}
+
+li:first-child::after {
+  content: "\25BC";
+  color: white;
+  margin-left: 0.6rem;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.button-small {
+  font-family: "Poppins", sans-serif;
+  background-color: #ba0cc5;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+section[aria-label="hero"] {
+  width: 100%;
+  height: 100%;
+  background: url("./assets/bg.png") no-repeat center/cover;
+  background-position: center top;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero {
+  width: 55%;
+  height: 100%;
+  margin: 0rem auto;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+
+.hero-description {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.button-large {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ba0cc5;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+}
